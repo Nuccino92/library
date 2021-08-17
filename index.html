@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Your Bookmark
+        <div class="image"></div>
+    </header>
+
+    <button id="add" data-open-button="#modal">Add Book</button>
+    <form class="modal" id="modal">
+        <div class="popupHeader">
+            <div class="bookInfo">Book Information</div>
+            <button data-close-button class="closeButton">&times;</button>
+        </div>
+        <div class="formBody">
+        <div class="formBox">
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Title">
+        </div>
+        <div class="formBox">
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="Author">
+        </div>
+        <div class="formBox">
+            <label for="pages">Pages</label>
+            <input type="text" id="pages" placeholder="Pages">
+        </div>
+        </div>
+    </form>
+    <div id="overlay"></div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
