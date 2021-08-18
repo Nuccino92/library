@@ -13,7 +13,7 @@
     </header>
 
     <button id="add" data-open-button="#modal">Add Book</button>
-    <form class="modal" id="modal">
+    <form class="modal" id="modal" onsubmit="return false">
         <div class="popupHeader">
             <div class="bookInfo">Book Information</div>
             <button data-close-button class="closeButton">&times;</button>
@@ -31,8 +31,10 @@
             <label for="pages">Pages</label>
             <input type="text" id="pages" placeholder="Pages">
         </div>
+            <button id="submit">Add</button>
         </div>
     </form>
+    
     <div id="overlay"></div>
     <script type="text/javascript" src="script.js"></script>
 </body>
