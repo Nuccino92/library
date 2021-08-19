@@ -12,6 +12,7 @@ header {
     font-weight: bold;
     padding-left: 46px;
     padding-top: 15px;
+    margin-bottom: 90px;
 }
 
 .image {
@@ -84,8 +85,8 @@ header {
 }
 
 #add {
-    position: fixed;
-    top: 30%;
+    position: absolute;
+    top: 5.8%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 180px;
@@ -103,10 +104,16 @@ header {
     background: #4F95DA;
   }
 
-#bookdiv {
-    
-    
-    
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.cardDiv {
     border: 1px solid black;
-    background: red;
+    margin: 40px;
 }
