@@ -24,6 +24,9 @@ header {
     margin: -28px;
 }
 
+body {
+    /* background-color: rgb(83, 83, 189); */
+}
 .modal {
     position: fixed;
     top: 50%;
@@ -86,7 +89,7 @@ header {
 
 #add {
     position: absolute;
-    top: 5.8%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 180px;
@@ -95,14 +98,13 @@ header {
     background: transparent;
     border: 1px solid #91C9FF;
     outline: none;
-    transition: 1s ease-in-out;
-      
+    transition: 1s ease-in-out;     
 }
 
 #add:hover {
     transition: 1s ease-in-out;
     background: #4F95DA;
-  }
+}
 
 .cardGrid {
     display: grid;
@@ -116,4 +118,55 @@ header {
 .cardDiv {
     border: 1px solid black;
     margin: 40px;
+    padding-top: 20px;
+    background-color: rgb(145, 50, 41);
+    color: white;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.cardDiv:hover {
+    box-shadow: 0px 0px 3px 3px gold;
+}
+
+#cardId {
+    font-size: 41px;
+    font-style: italic;
+    color: gold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.paraOneClass {
+    font-size: 32px !important;
+    margin-top: 20px !important;
+}
+
+#para {
+    margin: 30px;
+    font-size: 24px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white;
+}
+
+#para:hover {
+    color: gold;
+}
+
+#readStat {
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(136, 22, 22);
+    display: inline-block;
+    width: 50%;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+#removeButton {
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(60, 65, 87);
+    display: inline-block;
+    width: 50%;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
 }
