@@ -117,10 +117,10 @@ function displayBooks() {
             else{myLibrary[i].read = false}; 
 
             if (myLibrary[i].read == false) {
-                readStatus.innerText = 'Not Read'; (readStatus.style.backgroundColor = 'rgb(136, 22, 22)')
+                readStatus.innerText = 'Not Read'; (readStatus.style.backgroundColor = 'rgb(119, 38, 31)');
             }
             if (myLibrary[i].read == true) {
-                (readStatus.innerText = 'Read'), (readStatus.style.backgroundColor = 'green')
+                (readStatus.innerText = 'Read'), (readStatus.style.backgroundColor = 'green');
             }
 
     })
@@ -151,12 +151,6 @@ function displayBooks() {
         //     console.log(localStorage)
         // }
 
-
-    // const restoreLocal = () => {
-    //     const myLibrary = JSON.parse(localStorage.getItem('BookList'))
-    //     bookList.myLibrary = [];
-    // }    
-    
    
         
        
